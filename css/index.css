@@ -1,0 +1,450 @@
+@import url("global.css");
+
+.hero {
+  background-image: url(../img/portada-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  padding: 2rem 1rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  position: relative;
+  z-index: 0;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(35, 49, 66, 0.6);
+  z-index: 1;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 2;
+}
+
+.hero button {
+  background-color: #ff4500;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #e03e00;
+}
+
+.search-box {
+  background-color: #e3e3e3;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.search-form input,
+.search-form select,
+.search-form .search-button {
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.search-form .search-button {
+  background-color: #ff4500;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-form .search-button:hover {
+  background-color: #e03e00;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  background-color: #f4f4f4;
+}
+
+.intro-text {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intro-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.intro-text p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.intro-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.tours {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #fff;
+}
+
+.tours h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.tours p {
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.tour-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.tour-card {
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.tour-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.tour-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.tour-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0.3rem 0;
+}
+
+.tour-card p:last-of-type {
+  color: #ff4500;
+  font-weight: bold;
+}
+
+.benefits {
+  padding: 2rem 1rem;
+  background-color: #233142;
+  color: white;
+  text-align: center;
+}
+
+.benefits h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.benefits p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.benefits img {
+  margin-top: 1.5rem;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.vacation-tours {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #fff;
+}
+
+.vacation-tours h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.vacation-tours p {
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.vacation-tours-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.vacation-tours-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.vacation-tours-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.vacation-tours-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.vacation-tours-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0.3rem 0;
+}
+
+.vacation-tours-card p:last-of-type {
+  color: #ff4500;
+  font-weight: bold;
+}
+
+.container-404 {
+  line-height: 100px;
+  margin-top: 200px;
+}
+
+.contact-intro {
+  padding: 50px;
+}
+
+.contact-form {
+  background-color: #dbdbdba1;
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form form {
+  width: 50%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+}
+
+@media (width >= 768px) {
+  .hero {
+    height: 700px;
+    padding: 4rem 2rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .search-box {
+    max-width: 900px;
+  }
+
+  .intro,
+  .benefits,
+  .tours,
+  .vacation-tours {
+    padding: 4rem 2rem;
+  }
+
+  .intro h2,
+  .benefits h2,
+  .tours h2,
+  .vacation-tours h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .intro p,
+  .benefits p,
+  .vacation-tours p {
+    font-size: 1rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tour-cards-container,
+  .vacation-tours-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .tour-card,
+  .vacation-tours-card {
+    width: 280px;
+    max-width: 100%;
+  }
+}
+
+@media (width >= 1024px) {
+  .search-form {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .search-form input,
+  .search-form select {
+    flex: 1;
+    min-width: 150px;
+  }
+
+  .search-form .search-button {
+    width: auto;
+    padding: 0.8rem 2rem;
+    white-space: nowrap;
+  }
+
+  .intro {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+  }
+
+  .intro-text,
+  .intro-image {
+    flex: 1;
+    max-width: 50%;
+  }
+
+  .intro-text {
+    padding-right: 2rem;
+  }
+
+  .intro-image {
+    padding-left: 2rem;
+  }
+
+  .tours h2,
+  .tours p {
+    text-align: center;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .benefits-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .benefits-text {
+    flex: 1;
+  }
+
+  .benefits-text h2,
+  .benefits-text p {
+    text-align: left;
+  }
+
+  .benefits-image {
+    flex: 1;
+  }
+
+  .benefits-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.5rem;
+  }
+
+  .vacation-tours {
+    padding: 4rem 2rem;
+  }
+
+  .vacation-tours h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .vacation-tours p {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0 auto 2rem auto;
+    padding: 0 1rem;
+    max-width: 100%;
+  }
+
+  .vacation-tours-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .vacation-tours-card {
+    width: 280px;
+    max-width: 100%;
+  }
+}

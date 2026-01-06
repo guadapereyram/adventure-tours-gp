@@ -1,0 +1,51 @@
+@import url("global.css");
+
+/* Contenedor principal de la página 404 */
+.container-404 {
+  padding: 6rem 1rem 4rem; /* arriba, laterales y abajo */
+  text-align: center;
+  background: white;
+  color: black;
+}
+
+/* Título principal */
+.container-404 h1 {
+  font-size: 5rem;
+  color: #ff4500;
+  line-height: 1;
+}
+
+/* Texto secundario */
+.container-404 p {
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
+}
+
+/* Botón para volver al inicio */
+.back-home {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #ff4500;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.back-home:hover {
+  background-color: #e03e00;
+}
+
+/* MEDIA QUERY: TABLET EN ADELANTE */
+@media (width >= 768px) {
+  .container-404 h1 {
+    font-size: 8rem;
+  }
+
+  .container-404 p {
+    font-size: 1.5rem;
+  }
+}
+
